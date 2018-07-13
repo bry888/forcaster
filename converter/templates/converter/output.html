@@ -1,0 +1,26 @@
+{% extends "converter/index.html" %}
+{% block title %}skonwertowana lista{% endblock %}
+{% block content %}
+
+<div class="block">
+
+	{% if query_result %}
+	<div class="output">
+		<form method="get">
+
+			{{query_result}}
+
+		</form>
+	</div>
+
+	<h2>^ Paste the result category IDs into DFP forcaster</h2>
+	{% endif %}
+
+
+	{% if error %}
+		<div class="error">{{error}}</div>
+	{% endif %}
+
+
+</div>
+{% endblock %}
