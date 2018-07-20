@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 from .forms import LinkForm
 
-from .format_category_to_dfp import convert_urls_for_dfp
+from .format_category_to_dfp2 import convert_urls_for_dfp
 
 # Create your views here.
 def index(request):
